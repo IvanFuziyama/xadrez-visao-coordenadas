@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.card-tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: 560px;
+}
+.casa{
+    width: 70px;
+    height: 70px;
+}
+.branco{
+    background-color: var(--casa-branco);
+}
+.preto{
+    background-color: var(--casa-preto);
+}

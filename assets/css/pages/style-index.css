@@ -1,0 +1,9 @@
+@import '../global/global.css';
+@import './partials/navbar.css';
+@import './partials/tabuleiro.css';
+@import './partials/pontuacao.css';
+@import './partials/footer.css';
+
+body{
+    background-color: var(--body-background);
+}

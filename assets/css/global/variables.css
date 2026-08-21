@@ -1,0 +1,13 @@
+:root{
+    --font-family-principal: 'Hanken Grotesk';
+    --font-color-branco: #fff;
+    --font-color-preto: #000000;
+    --casa-branco: #e2dddd;
+    --casa-preto: #383535;
+
+    /* body */
+    --body-background: #576b54;
+
+    /* navbar  */
+    --navbar-background: #455543;
+}

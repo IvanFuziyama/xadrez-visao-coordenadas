@@ -1,0 +1,11 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--navbar-background);
+    height: 60px;
+    margin-bottom: 20px;
+}
+.navbar h1{
+    color: var(--font-color-branco);
+}
