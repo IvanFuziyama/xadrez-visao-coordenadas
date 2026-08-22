@@ -1,0 +1,34 @@
+.pontuacao-card{
+    display: flex;
+    width: 300px;
+    height: 560px;
+    flex-direction: column;
+    background-color: rebeccapurple;
+    margin-left: 20px;
+}
+.pontuacao-card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(67, 30, 104);
+}
+.pontuacao-card-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pontuacao-card-footer{
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+}
+.pontuacao-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn-comecar{
+    padding: 10px;
+    background-color: green;
+    border: none;
+}

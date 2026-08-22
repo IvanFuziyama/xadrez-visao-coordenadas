@@ -7,18 +7,42 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar">
-            <h1>Xadrez</h1>
+            <h1>XADREZ</h1>
         </nav>
     </header> 
-    <main>
+    <main class="main">
         <section class="tabuleiro">
-            <div class="container">
                 <div class="card-tabuleiro">
                     <!-- casas -->
                 </div>
-            </div>
+        </section>
+        <section class="pontuacao">
+                <div class="pontuacao-card">
+                    <div class="pontuacao-card-header">
+                        <h1>Visão</h1>
+                    </div>
+                    <div class="pontuacao-card-main">
+                        <h2>Recorde</h2>
+                        <p>0</p>
+                    </div>
+                    <div class="pontuacao-card-footer">
+                        <div class="pontuacao-container">
+                            <p>Cor:</p>
+                            <select name="select-cor" id="select-cor">
+                                <option value="Branco">Branco</option>
+                                <option value="Preto">Preto</option>
+                                <option value="Branco ou Preto">Branco ou Preto</option>
+                            </select>
+                        </div>
+                        <div class="pontuacao-container">
+                            <p>Mostrar Coordenadas</p>
+                            <input type="checkbox" name="checkbox-mostrar-cod" id="checkbox-mostrar-cod">
+                        </div>
+                        <button type="button" class="btn-comecar">COMEÇAR</button>
+                    </div>
+                </div>
         </section>
     </main> 
     <script type="module" src="assets/js/main.js"></script>
