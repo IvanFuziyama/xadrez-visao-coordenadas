@@ -10,4 +10,11 @@
 
     /* navbar  */
     --navbar-background: #455543;
+
+    /*pontuacao*/
+    --pontuacao-background: #2f332e;
+    --pontuacao-header-background: #1c221c;
+    --pontuacao-footer-background: #1c221c;
+    --pontuacao-font-color: #fff;
+    --pontuacao-button-background: #5cb350;
 }
