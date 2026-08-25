@@ -40,11 +40,13 @@
 }
 .select-cor{
     margin-left: 10px;
+    cursor: pointer;
 }
 .checkbox-mostrar-cod{
     width: 20px;
     height: 20px;
     margin-left: 10px;
+    cursor: pointer;
 }
 .btn-comecar{
     padding: 10px;

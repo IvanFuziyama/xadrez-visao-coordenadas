@@ -16,7 +16,5 @@ export const desenvolverCasas = e => {
         col.classList.add('col')
         tabuleiro.appendChild(col)
     }
-}
-export const mostrarCoordenadas = e => {
-    
+    mostrarCoordenadas();
 }
