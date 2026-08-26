@@ -12,6 +12,13 @@ export const desenvolverCasas = e => {
                 else casa.classList.add('casa', 'branco');
             }
             col.appendChild(casa);
+            const clicarCasas = e =>{
+                casa.style.cursor = 'pointer';
+                casa.addEventListener('click', e =>{
+                    console.log(posicao, bloco);
+                })
+            }
+            clicarCasas();
         }
         col.classList.add('col')
         tabuleiro.appendChild(col)
