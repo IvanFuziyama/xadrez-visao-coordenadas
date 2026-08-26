@@ -1,0 +1,18 @@
+/* Fiz uma gambiarra usando position, sei q n é recomendado, mas tava muito difícil */
+.coordenadasNum {
+    position: absolute;
+    left: -20px;
+    top: 0;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.coordenadasLetras {
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    width: 480px;
+    display: flex;
+    justify-content: space-around;
+}

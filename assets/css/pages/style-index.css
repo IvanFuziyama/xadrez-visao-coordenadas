@@ -1,6 +1,7 @@
 @import '../global/global.css';
 @import './partials/navbar.css';
 @import './partials/main.css';
+@import './partials/coordenadas.css';
 @import './partials/tabuleiro.css';
 @import './partials/pontuacao.css';
 @import './partials/footer.css';
