@@ -16,7 +16,6 @@ export const desenvolverCasas = e => {
                 const historico = document.querySelector('.pontuacao-historico')
                 casa.style.cursor = 'pointer';
                 casa.addEventListener('click', e =>{
-                    
                     historico.innerHTML += `${posicao}${bloco} `;
                     console.log(posicao, bloco);
                 })
