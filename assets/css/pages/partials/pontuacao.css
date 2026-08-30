@@ -25,6 +25,9 @@
     justify-content: center;
     flex: 1;
 }
+.pontuacao-historico{
+    padding: 5px 20px;
+}
 .pontuacao-card-footer{
     display: flex;
     flex-direction: column;
