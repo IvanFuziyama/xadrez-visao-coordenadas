@@ -16,7 +16,10 @@ export const desenvolverCasas = e => {
                 const historico = document.querySelector('.pontuacao-historico')
                 casa.style.cursor = 'pointer';
                 casa.addEventListener('click', e =>{
-                    historico.innerHTML += `${posicao}${bloco} `;
+                    const arrayLetras = ['a','b','c','d','e','f','g','h'];
+                    const numero = 8 - posicao;
+                    const letra = arrayLetras[bloco];
+                    historico.innerHTML += `${numero}${letra} `;
                     console.log(posicao, bloco);
                 })
             }
