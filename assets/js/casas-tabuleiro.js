@@ -20,7 +20,7 @@ export const desenvolverCasas = e => {
                 casa.addEventListener('click', e =>{
                     const numero = 8 - posicao;
                     const letra = arrayLetras[bloco]; //Pega o elemento da arrayLetras que está na posição indicada por bloco
-                    historico.innerHTML += `${numero}${letra} `;
+                    historico.innerHTML += `${letra}${numero} `;
                 })
             }
 
@@ -37,8 +37,9 @@ export const desenvolverCasas = e => {
         coordenadaExibida.textContent = coordenadaCombinacao;
         tabuleiro.appendChild(coordenadaExibida);
         coordenadaExibida.classList.add('coordenadaCentral')
-        coordenadaExibida.style.fontSize = '100px';
-        coordenadaExibida.style.color = 'blue';
+        coordenadaExibida.style.fontSize = '130px';
+        coordenadaExibida.style.textShadow = '2px 2px 2px black'
+        coordenadaExibida.style.color = 'white';
         coordenadaExibida.style.userSelect = 'none';
         coordenadaExibida.style.pointerEvents = 'none';
         console.log(coordenadaCombinacao);
