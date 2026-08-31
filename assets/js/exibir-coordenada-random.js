@@ -1,8 +1,5 @@
-import { arrayLetras,arrayNumeros, tabuleiro, botaoIniciar } from "./variaveis-global.js";
+import { tabuleiro, botaoIniciar, coordenadaCombinacao } from "./variaveis-global.js";
 export const exibirCoordenada = e =>{
-    const numAleatorio = arrayNumeros[Math.floor(Math.random() * arrayNumeros.length)];
-    const letraAleatorio = arrayLetras[Math.floor(Math.random() * arrayLetras.length)];
-    const coordenadaCombinacao = letraAleatorio + numAleatorio;
     const coordenadaExibida = document.createElement('div');
     coordenadaExibida.textContent = coordenadaCombinacao;
     tabuleiro.appendChild(coordenadaExibida);
