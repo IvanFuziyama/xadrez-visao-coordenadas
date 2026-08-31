@@ -1,5 +1,5 @@
 import { exibirCoordenada } from "./exibir-coordenada-random.js";
-import { arrayLetras, tabuleiro, estadoJogo, coordenadaCombinacao } from "./variaveis-global.js";
+import { arrayLetras, tabuleiro, estadoJogo, coordenadaCombinacao, coordenadaAtual } from "./variaveis-global.js";
 export const desenvolverCasas = e => {
     let pontuacaoArmazenado=0;
     for(let bloco=0;bloco<8;bloco++){
@@ -14,7 +14,6 @@ export const desenvolverCasas = e => {
                 else casa.classList.add('casa', 'branco');
             }
             col.appendChild(casa);
-            const clicarCasas = e =>{
                 const historico = document.querySelector('.pontuacao-historico')
                 casa.addEventListener('click', e =>{
                     if(!estadoJogo.iniciado) return;
@@ -22,19 +21,16 @@ export const desenvolverCasas = e => {
                     const letra = arrayLetras[bloco]; //Pega o elemento da arrayLetras que está na posição indicada por bloco
                     const coordenadaCombinacaoSelecionada = letra + numero
                     historico.innerHTML += `${coordenadaCombinacaoSelecionada} `;
-                    const verificacao = e =>{
                         if(!estadoJogo.iniciado) return;
-                        if(coordenadaCombinacaoSelecionada === coordenadaCombinacao){
+                        if(coordenadaCombinacaoSelecionada === coordenadaAtual){
                             const recorde = document.querySelector('.pontuacao-recorde')
                             pontuacaoArmazenado++;
                             recorde.innerHTML = pontuacaoArmazenado;
-                        }
+                            exibirCoordenada();
                     }
                     verificacao();
-                })
-            }           
-            clicarCasas();
-        }
+                })          
+            }
         col.classList.add('col')
         tabuleiro.appendChild(col)
     }
