@@ -8,6 +8,10 @@
 .casa{
     width: 60px;
     height: 60px;
+    cursor: inherit;
+}
+.card-tabuleiro.jogo-iniciado .casa {
+    cursor: pointer;
 }
 .branco{
     background-color: var(--casa-branco);

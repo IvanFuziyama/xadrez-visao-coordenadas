@@ -1,6 +1,5 @@
-import { arrayLetras } from "./variaveis-global.js";
+import { arrayLetras, tabuleiro, estadoJogo } from "./variaveis-global.js";
 export const desenvolverCasas = e => {
-    const tabuleiro = document.querySelector('.card-tabuleiro');
     for(let bloco=0;bloco<8;bloco++){
         const col = document.createElement('div');
         for(let posicao=0;posicao<8;posicao++){
@@ -15,8 +14,8 @@ export const desenvolverCasas = e => {
             col.appendChild(casa);
             const clicarCasas = e =>{
                 const historico = document.querySelector('.pontuacao-historico')
-                casa.style.cursor = 'pointer';
                 casa.addEventListener('click', e =>{
+                    if(!estadoJogo.iniciado) return;
                     const numero = 8 - posicao;
                     const letra = arrayLetras[bloco]; //Pega o elemento da arrayLetras que está na posição indicada por bloco
                     historico.innerHTML += `${letra}${numero} `;
