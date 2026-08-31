@@ -26,8 +26,8 @@ export const desenvolverCasas = e => {
                             const recorde = document.querySelector('.pontuacao-recorde')
                             pontuacaoArmazenado++;
                             recorde.innerHTML = pontuacaoArmazenado;
-                            exibirCoordenada();
-                    }
+                        }
+                    exibirCoordenada();
                     verificacao();
                 })          
             }
