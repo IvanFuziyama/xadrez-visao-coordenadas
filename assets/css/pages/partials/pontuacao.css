@@ -27,6 +27,15 @@
 }
 .pontuacao-historico{
     padding: 5px 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.caixa-historico{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
 }
 .pontuacao-card-footer{
     display: flex;

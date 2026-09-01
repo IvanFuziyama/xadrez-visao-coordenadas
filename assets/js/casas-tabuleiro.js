@@ -1,5 +1,5 @@
 import { exibirCoordenada } from "./exibir-coordenada-random.js";
-import { arrayLetras, tabuleiro, estadoJogo, coordenadaCombinacao, coordenadaAtual } from "./variaveis-global.js";
+import { arrayLetras, tabuleiro, estadoJogo, coordenadaAtual } from "./variaveis-global.js";
 export const desenvolverCasas = e => {
     let pontuacaoArmazenado=0;
     for(let bloco=0;bloco<8;bloco++){
@@ -16,17 +16,31 @@ export const desenvolverCasas = e => {
             col.appendChild(casa);
                 const historico = document.querySelector('.pontuacao-historico')
                 casa.addEventListener('click', e =>{
+                    const caixa = document.createElement('div')
+                     caixa.classList.add('caixa-historico');
+                    const correto = document.createElement('img');
+                    const incorreto = document.createElement('img');
+                    correto.src ='./assets/img/icon-correto.png';
+                    incorreto.src='./assets/img/icon-incorreto.png';
+                    correto.style.background = 'green';
+                    correto.style.padding = '2px'
+                    incorreto.style.background = 'red';
+                    incorreto.style.padding = '2px'
                     if(!estadoJogo.iniciado) return;
                     const numero = 8 - posicao;
                     const letra = arrayLetras[bloco]; //Pega o elemento da arrayLetras que está na posição indicada por bloco
                     const coordenadaCombinacaoSelecionada = letra + numero
-                    historico.innerHTML += `${coordenadaCombinacaoSelecionada} `;
-                        if(!estadoJogo.iniciado) return;
-                        if(coordenadaCombinacaoSelecionada === coordenadaAtual){
-                            const recorde = document.querySelector('.pontuacao-recorde')
-                            pontuacaoArmazenado++;
-                            recorde.innerHTML = pontuacaoArmazenado;
-                        }
+                    caixa.innerHTML += coordenadaCombinacaoSelecionada + ' ';
+                    if(!estadoJogo.iniciado) return;
+                    if(coordenadaCombinacaoSelecionada === coordenadaAtual){
+                        const recorde = document.querySelector('.pontuacao-recorde')
+                        caixa.appendChild(correto);
+                        pontuacaoArmazenado++;
+                        recorde.innerHTML = pontuacaoArmazenado;
+                    }else{ 
+                        caixa.appendChild(incorreto);
+                    }
+                    historico.appendChild(caixa);
                     exibirCoordenada();
                     verificacao();
                 })          

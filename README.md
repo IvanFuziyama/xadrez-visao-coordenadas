@@ -14,10 +14,7 @@
 
 <p>Existem outras funcionalidades que ainda estão em desenvolvimento, como a opção de selecionar a cor das peças, entre Branco e Preto. Essa escolha fará com que o tabuleiro 
   seja invertido de acordo com a perspectiva escolhida, alterando a ordem dos números e das letras.</p>
-<p>Também pretendo desenvolver uma opção para habilitar ou desabilitar a exibição das coordenadas no tabuleiro. </p>
 <p>Outra funcionalidade planejada é a adição de um cronômetro, permitindo que o usuário selecione um determinado tempo para realizar os exercícios.</p>
-<p>Além disso, pretendo adicionar ícones mais intuitivos para indicar quando o usuário acertar ou errar uma coordenada e, futuramente, implementar uma forma de armazenar 
-  a pontuação obtida.</p>
 
 <h2>Aprendizados</h2>
 
