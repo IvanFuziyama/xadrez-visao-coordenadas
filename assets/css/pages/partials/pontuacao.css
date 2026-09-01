@@ -22,8 +22,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     flex: 1;
+}
+.texto-recorde{
+    margin-top: 10px;
+}
+.pontuacao-recorde{
+    font-size: 32px;
+    font-weight: bold;
 }
 .pontuacao-historico{
     padding: 5px 20px;
@@ -31,6 +37,8 @@
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
+    max-height: 200px;
+    overflow-y: auto;
 }
 .caixa-historico{
     display: flex;
@@ -53,6 +61,7 @@
 .select-cor{
     margin-left: 10px;
     cursor: pointer;
+    width: 100px;
 }
 .checkbox-mostrar-cod{
     width: 20px;

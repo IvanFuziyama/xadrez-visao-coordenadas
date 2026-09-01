@@ -1,7 +1,10 @@
 import { exibirCoordenada } from "./exibir-coordenada-random.js";
 import { arrayLetras, tabuleiro, estadoJogo, coordenadaAtual } from "./variaveis-global.js";
 export const desenvolverCasas = e => {
+    const recorde = document.querySelector('.pontuacao-recorde')
+    const historico = document.querySelector('.pontuacao-historico')
     let pontuacaoArmazenado=0;
+    recorde.innerHTML += pontuacaoArmazenado;
     for(let bloco=0;bloco<8;bloco++){
         const col = document.createElement('div');
         for(let posicao=0;posicao<8;posicao++){
@@ -14,10 +17,9 @@ export const desenvolverCasas = e => {
                 else casa.classList.add('casa', 'branco');
             }
             col.appendChild(casa);
-                const historico = document.querySelector('.pontuacao-historico')
                 casa.addEventListener('click', e =>{
                     const caixa = document.createElement('div')
-                     caixa.classList.add('caixa-historico');
+                    caixa.classList.add('caixa-historico');
                     const correto = document.createElement('img');
                     const incorreto = document.createElement('img');
                     correto.src ='./assets/img/icon-correto.png';
@@ -33,7 +35,6 @@ export const desenvolverCasas = e => {
                     caixa.innerHTML += coordenadaCombinacaoSelecionada + ' ';
                     if(!estadoJogo.iniciado) return;
                     if(coordenadaCombinacaoSelecionada === coordenadaAtual){
-                        const recorde = document.querySelector('.pontuacao-recorde')
                         caixa.appendChild(correto);
                         pontuacaoArmazenado++;
                         recorde.innerHTML = pontuacaoArmazenado;
