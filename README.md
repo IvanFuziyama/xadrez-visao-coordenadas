@@ -10,12 +10,6 @@
     <img src="assets/img/image.png" width="700">
   </p>
 
-<h2>Funcionalidades em desenvolvimento</h2>
-
-<p>Existem outras funcionalidades que ainda estão em desenvolvimento, como a opção de selecionar a cor das peças, entre Branco e Preto. Essa escolha fará com que o tabuleiro 
-  seja invertido de acordo com a perspectiva escolhida, alterando a ordem dos números e das letras.</p>
-<p>Outra funcionalidade planejada é a adição de um cronômetro, permitindo que o usuário selecione um determinado tempo para realizar os exercícios.</p>
-
 <h2>Aprendizados</h2>
 
 <p>O principal aprendizado que obtive durante o desenvolvimento deste projeto foi a organização dos arquivos JavaScript por meio de <code>import</code> e <code>export</code>,
