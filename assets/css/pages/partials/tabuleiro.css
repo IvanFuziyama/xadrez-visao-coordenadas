@@ -1,21 +1,28 @@
 .card-tabuleiro {
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    display: flex;
     height: 480px;
 }
-.casa{
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.casa {
     width: 60px;
     height: 60px;
     cursor: inherit;
 }
+
 .card-tabuleiro.jogo-iniciado .casa {
     cursor: pointer;
 }
-.branco{
+
+.branco {
     background-color: var(--casa-branco);
 }
-.preto{
+
+.preto {
     background-color: var(--casa-preto);
 }

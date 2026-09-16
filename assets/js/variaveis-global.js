@@ -10,3 +10,4 @@ export const coordenadaCombinacao = e =>{
     coordenadaAtual = letraAleatorio + numAleatorio;
     return coordenadaAtual;
 }
+

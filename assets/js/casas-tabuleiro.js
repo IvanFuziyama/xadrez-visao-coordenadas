@@ -33,7 +33,6 @@ export const desenvolverCasas = e => {
                     const letra = arrayLetras[bloco]; //Pega o elemento da arrayLetras que está na posição indicada por bloco
                     const coordenadaCombinacaoSelecionada = letra + numero
                     caixa.innerHTML += coordenadaCombinacaoSelecionada + ' ';
-                    if(!estadoJogo.iniciado) return;
                     if(coordenadaCombinacaoSelecionada === coordenadaAtual){
                         caixa.appendChild(correto);
                         pontuacaoArmazenado++;
