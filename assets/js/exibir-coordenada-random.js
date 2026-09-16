@@ -11,8 +11,9 @@ export const exibirCoordenada = e =>{
     coordenadaExibida.style.userSelect = 'none';    
     coordenadaExibida.style.pointerEvents = 'none';
     coordenadaExibida.style.opacity = '0.8';
-    console.log(coordenadaCombinacao);
+    // console.log(coordenadaCombinacao);
     botaoIniciar.disabled = true;
+    
     botaoIniciar.style.opacity = '70%';
     botaoIniciar.style.cursor = 'inherit';
     }

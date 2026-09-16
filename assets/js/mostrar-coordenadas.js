@@ -1,6 +1,6 @@
 import { apresentarCoordenadas } from "./coordenadas.js";
+import { checkbox } from "./variaveis-global.js";
 export const mostrarCoordenadas = () => {
-    const checkbox = document.querySelector('.checkbox-mostrar-cod');
     if (checkbox.checked) {
     apresentarCoordenadas();
     }

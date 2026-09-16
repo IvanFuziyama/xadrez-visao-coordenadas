@@ -1,6 +1,5 @@
-import { tabuleiro } from "./variaveis-global.js";
+import { tabuleiro, select_cor } from "./variaveis-global.js";
 export const alterarOrdem = e =>{
-        const select_cor = document.querySelector('.select-cor');
         const colunas = document.querySelectorAll('.col');
         const numeros_lateral = document.querySelector('.coordenadasNum')
         const letras_embaixo = document.querySelector('.coordenadasLetras')

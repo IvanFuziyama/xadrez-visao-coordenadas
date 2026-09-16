@@ -37,7 +37,7 @@
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
-    max-height: 200px;
+    max-height: 130px;
     overflow-y: auto;
 }
 .caixa-historico{
@@ -68,6 +68,9 @@
     height: 20px;
     margin-left: 10px;
     cursor: pointer;
+}
+.input-time{
+    margin: 0 5px;
 }
 .btn-comecar{
     padding: 10px;
