@@ -26,3 +26,12 @@
 .preto {
     background-color: var(--casa-preto);
 }
+@media (max-width: 550px){
+    .card-tabuleiro{
+        height: 400px;
+    }
+    .casa{
+        width: 50px;
+        height: 50px;
+    }
+}

@@ -16,3 +16,11 @@
     display: flex;
     justify-content: space-around;
 }
+@media (max-width: 550px){
+    .coordenadasNum{
+        height: 400px;
+    }
+    .coordenadasLetras{
+        width: 400px;
+    }
+}

@@ -5,6 +5,7 @@
     background-color: var(--navbar-background);
     height: 60px;
     margin-bottom: 20px;
+    border-radius: 0 0 20px 20px;
 }
 .navbar h1{
     color: var(--font-color-branco);
