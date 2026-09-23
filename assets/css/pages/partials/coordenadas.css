@@ -24,3 +24,11 @@
         width: 400px;
     }
 }
+@media (max-width: 450px){
+    .coordenadasNum{
+        height: 360px;
+    }
+    .coordenadasLetras{
+        width: 360px;
+    }
+}

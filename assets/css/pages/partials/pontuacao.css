@@ -95,3 +95,8 @@
         width: 350px;
     }
 }
+@media (max-width: 450px){
+    .pontuacao-card{
+        width: 300px;
+    }
+}
