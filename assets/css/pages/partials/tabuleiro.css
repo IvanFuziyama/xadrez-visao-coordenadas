@@ -35,3 +35,12 @@
         height: 50px;
     }
 }
+@media (max-width: 450px){
+    .card-tabuleiro{
+        height: 360px;
+    }
+    .casa{
+        width: 45px;
+        height: 45px;
+    }
+}
