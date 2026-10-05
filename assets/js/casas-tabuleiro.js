@@ -3,8 +3,7 @@ import { arrayLetras, tabuleiro, estadoJogo, coordenadaAtual } from "./variaveis
 export const desenvolverCasas = e => {
     const recorde = document.querySelector('.pontuacao-recorde');
     const historico = document.querySelector('.pontuacao-historico');
-    let pontuacaoArmazenado=0;
-    recorde.innerHTML += pontuacaoArmazenado;
+    recorde.innerHTML += estadoJogo.pontuacao;
     for(let bloco=0;bloco<8;bloco++){
         const col = document.createElement('div');
         for(let posicao=0;posicao<8;posicao++){
@@ -35,14 +34,13 @@ export const desenvolverCasas = e => {
                     caixa.innerHTML += coordenadaCombinacaoSelecionada + ' ';
                     if(coordenadaCombinacaoSelecionada === coordenadaAtual){
                         caixa.appendChild(correto);
-                        pontuacaoArmazenado++;
-                        recorde.innerHTML = pontuacaoArmazenado;
+                        estadoJogo.pontuacao++;
+                        recorde.innerHTML = estadoJogo.pontuacao;
                     }else{ 
                         caixa.appendChild(incorreto);
                     }
                     historico.appendChild(caixa);
                     exibirCoordenada();
-                    verificacao();
                 })      
             }
         col.classList.add('col')

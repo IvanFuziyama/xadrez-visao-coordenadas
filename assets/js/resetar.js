@@ -23,5 +23,9 @@ export const resetarJogo = e =>{
         tabuleiro.classList.remove('jogo-iniciado');
         const coordenada = document.querySelector('.coordenadaCentral');
         if (coordenada) coordenada.remove();
+
+        estadoJogo.pontuacao = 0;
+        document.querySelector('.pontuacao-recorde').innerHTML = estadoJogo.pontuacao;
+        document.querySelector('.pontuacao-historico').innerHTML = '';
     });
 }
