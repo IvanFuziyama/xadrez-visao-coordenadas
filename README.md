@@ -7,7 +7,7 @@
   coordenada é gerada. Caso erre, a pontuação permanece a mesma e uma nova coordenada é gerada.</p>
 
   <p align="center">
-    <img src="assets/img/image.png" width="700">
+    <img src="assets/img/imagem-readme.png" width="700">
   </p>
 
 <h2>Aprendizados</h2>
@@ -20,11 +20,10 @@
 
 <h2>Tecnologias utilizadas</h2>
 
-<ul> 
-  <li>JavaScript</li> 
-  <li>HTML</li> 
-  <li>CSS</li> 
-</ul>
+- **JavaScript**
+- **HTML**
+- **CSS**
+
 
 <h2>Inspiração</h2>
 
