@@ -20,11 +20,10 @@
 
 <h2>Tecnologias utilizadas</h2>
 
-<ul> 
-  <li>JavaScript</li> 
-  <li>HTML</li> 
-  <li>CSS</li> 
-</ul>
+- **JavaScript**
+- **HTML**
+- **CSS**
+
 
 <h2>Inspiração</h2>
 
