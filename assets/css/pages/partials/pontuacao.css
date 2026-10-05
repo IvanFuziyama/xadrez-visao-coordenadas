@@ -71,6 +71,7 @@
 }
 .input-time{
     margin: 0 5px;
+    background-color: var(--pontuacao-font-color);
 }
 .btn-comecar{
     padding: 10px;
