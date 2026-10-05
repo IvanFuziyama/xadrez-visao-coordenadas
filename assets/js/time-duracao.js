@@ -11,8 +11,7 @@ min.addEventListener('input', () => {
 export const tempo = e =>{
     let valor_minutos = Number(min.value);
     let valor_segundos = Number(seg.value);
-    let intervalo;
-    intervalo = setInterval(() =>{
+    estadoJogo.intervalo = setInterval(() =>{
         if(valor_segundos > 0)valor_segundos--;
         else if(valor_segundos <= 0){
             valor_minutos--;
@@ -22,7 +21,7 @@ export const tempo = e =>{
         seg.value = valor_segundos;
 
         if (valor_minutos === 0 && valor_segundos === 0) {
-            clearInterval(intervalo);
+            clearInterval(estadoJogo.intervalo);
             estadoJogo.iniciado=false;
             const desabilitar_coordenada = document.querySelector('.coordenadaCentral');
             desabilitar_coordenada.innerHTML = 'FIM'
