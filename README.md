@@ -1,4 +1,4 @@
-<h1>Treinamento de Visão de Coordenadas no Xadrez</h1>
+<h1>♟️Treinamento de Visão de Coordenadas no Xadrez</h1>
 
 <p>No xadrez, existem coordenadas no tabuleiro utilizadas para identificar as posições e as jogadas realizadas. Os números de <strong>1</strong> - <strong>8</strong> ficam 
   localizados no lado esquerdo do tabuleiro, enquanto as letras de <strong>a</strong> - <strong>h</strong> ficam na parte inferior.</p>
@@ -10,7 +10,7 @@
     <img src="assets/img/imagem-readme.png" width="700">
   </p>
 
-<h2>Aprendizados</h2>
+<h2>📖Aprendizados</h2>
 
 <p>O principal aprendizado que obtive durante o desenvolvimento deste projeto foi a organização dos arquivos JavaScript por meio de <code>import</code> e <code>export</code>,
   além da separação das funcionalidades entre diferentes arquivos. Isso me ajudou a organizar melhor o código e compreender com mais clareza a responsabilidade de cada arquivo 
@@ -18,13 +18,13 @@
 <p>Além disso, acredito que desenvolvi melhor minha lógica de programação, principalmente na capacidade de dividir o desenvolvimento de um projeto em etapas e pensar na 
   lógica necessária para implementar cada funcionalidade.</p>
 
-<h2>Tecnologias utilizadas</h2>
+<h2>🎯Tecnologias utilizadas</h2>
 
 - **JavaScript**
 - **HTML**
 - **CSS**
 
 
-<h2>Inspiração</h2>
+<h2>✨Inspiração</h2>
 
 <p>Este projeto foi desenvolvido com inspiração no <strong>Chess.com</strong>, que possui um exercício para treinar a identificação das coordenadas do tabuleiro de xadrez.</p>
